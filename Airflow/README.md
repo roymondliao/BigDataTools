@@ -208,7 +208,7 @@ $ airflow test <dag_id> <task_id> <date>
 	使用場景:比如說某段時間的任務沒有啟動，需要重跑那段時間的任務
 
 ```markdown
-$ airflow backfill <dag_id> <start_date> <end_date>
+$ airflow backfill <dag_id> -s <start_date> -e <end_date>
 ``` 
 
 * trigger_dag: 直接觸發DAG，產生task instance，在scheduler被調用的時候，就會開始執行DAG
@@ -254,6 +254,7 @@ $ airflow clear <dag_id>
 #### Introduce
 1. [http://www.cnblogs.com/harrychinese/p/airflow.html](http://www.cnblogs.com/harrychinese/p/airflow.html)
 2. [https://www.slideshare.net/r39132/introduction-to-apache-airflow-data-day-seattle-2016](https://www.slideshare.net/r39132/introduction-to-apache-airflow-data-day-seattle-2016)
+3. [https://wecode.wepay.com/posts/airflow-wepay](https://wecode.wepay.com/posts/airflow-wepay)
 
 #### Tutorial
 1. [http://michal.karzynski.pl/blog/2017/03/19/developing-workflows-with-apache-airflow/](http://michal.karzynski.pl/blog/2017/03/19/developing-workflows-with-apache-airflow/)
